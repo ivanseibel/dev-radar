@@ -7,7 +7,7 @@ function DevItem({ dev, handleDeleteDev }) {
   async function handleDelete(e) {
     e.preventDefault();
 
-    if (window.confirm('Confirma a exclusão?')) {
+    if (window.confirm('Confirm the deletion?')) {
       handleDeleteDev(dev.github_username);
     }
   }
@@ -29,11 +29,11 @@ function DevItem({ dev, handleDeleteDev }) {
 
         <section className="container flex">
           <div className="item flex-item-1">
-            <a href={`https://github.com/${dev.github_username}`}>Acessar perfil no Github</a>
+            <a href={`https://github.com/${dev.github_username}`}>Access Github profile</a>
           </div>
           <div className="item flex-item-1" id="actionButtons">
             <i className="material-icons">edit</i>
-            <a onClick={handleDelete}><i className="material-icons">delete</i></a>
+            <span href="#" onClick={handleDelete}><i className="material-icons">delete</i></span>
           </div>
         </section>
       </div>

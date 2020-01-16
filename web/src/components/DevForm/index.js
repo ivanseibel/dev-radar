@@ -41,7 +41,7 @@ function DevForm({ onSubmit }) {
   return (
     <form onSubmit={handleSubmit}>
       <div className="input-block">
-        <label htmlFor="github_username">Usuário do Github</label>
+        <label htmlFor="github_username">Github user</label>
         <input
           type="text"
           name="github_username"
@@ -53,7 +53,7 @@ function DevForm({ onSubmit }) {
       </div>
 
       <div className="input-block">
-        <label htmlFor="techs">Tecnologias</label>
+        <label htmlFor="techs">Technologies</label>
         <input
           type="text"
           name="techs"
@@ -90,7 +90,7 @@ function DevForm({ onSubmit }) {
         </div>
       </div>
 
-      <button type="submit">Salvar</button>
+      <button type="submit">Save</button>
     </form>
 
   );

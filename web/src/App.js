@@ -27,7 +27,7 @@ function App() {
   }
 
   async function handleDeleteDev(github_username) {
-    const response = await api.delete(`/devs/${github_username}`);
+    await api.delete(`/devs/${github_username}`);
 
     const newDevsList = devs.filter(function (value, index, arr) {
       return value.github_username !== github_username;
@@ -35,17 +35,13 @@ function App() {
 
     setDevs(newDevsList);
 
-    //   var filtered = array.filter(function(value, index, arr){
-    //     return value > 5;
-    // });
-
   }
 
   return (
     <div id="app">
 
       <aside>
-        <strong>Cadastrar</strong>
+        <strong>Register</strong>
         <DevForm onSubmit={handleAddDev} />
       </aside>
 
