@@ -1,0 +1,68 @@
+li.dev-item{
+  background: #fff;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+  padding: 10px 20px 10px 20px;
+}
+
+.container .card{
+  display: flex;
+  flex-direction: column;
+}
+
+li.dev-item header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+li.dev-item header img{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+
+li.dev-item header .user-info{
+  margin-left: 10px;
+}
+
+.container .content{
+  justify-content: flex-start;
+  min-height: 60px;
+}
+
+li.dev-item p{
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 0;
+}
+
+li.dev-item a{
+  color: #8e4dff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+li.dev-item a:hover{
+  color: #5a2ea6;
+}
+
+/* Flex */
+.flex {
+	display: flex;
+}
+
+.flex-item-1 {
+  flex: 1;
+}
+
+/* Flex Item */
+.item {
+	margin: 0;
+}
+
+#actionButtons{
+  text-align: right;
+}
