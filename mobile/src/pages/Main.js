@@ -57,9 +57,6 @@ function Main({ navigation }) {
     return null;
   }
 
-  // TODO: Mover a view de pesquisa para acima do teclado quando o usuário tocar dentro do input de pesquisa
-  // A view também pode ser posicionada no topo para evitar esse problema
-
   return (
     <>
       <MapView
@@ -92,13 +89,12 @@ function Main({ navigation }) {
             </Callout>
           </Marker>
         ))}
-
       </MapView>
 
       <View style={styles.searchForm}>
         <TextInput
           style={styles.searchInput}
-          placeholder="Buscar devs por techs..."
+          placeholder="Search by techs..."
           placeholderTextColor="#999"
           autoCapitalize="words"
           autoCorrect={false}
