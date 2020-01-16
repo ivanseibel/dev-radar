@@ -3,10 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const routes = require('./routes.js');
 
-const mongoUser = 'ivan';
-const mongoPass = 'XxWNCijCqLSPU3Jy';
+const mongoParams = require('../mongo-params.json');
 
-mongoose.connect(`mongodb+srv://${mongoUser}:${mongoPass}@cluster0-bwckm.gcp.mongodb.net/test?retryWrites=true&w=majority`,
+mongoose.connect(mongoParams.stringConnection,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
