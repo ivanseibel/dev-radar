@@ -17,7 +17,7 @@ Touching on the dev info ballon, user will be redirected to a screen with Github
 ## Some screen captures
 
 ### Main screen
-![](https://github.com/ivanseibel/images/blob/master/dev-radar/mobile-front-end-search.png "Main screen")
+![](https://github.com/ivanseibel/assets/blob/master/img/dev-radar/mobile-front-end-search.png "Main screen")
 
 ### Github Profile screen 
-![](https://github.com/ivanseibel/images/blob/master/dev-radar/mobile-front-end-gitprofile.png "Github Profile screen")
+![](https://github.com/ivanseibel/assets/blob/master/img/dev-radar/mobile-front-end-gitprofile.png "Github Profile screen")
