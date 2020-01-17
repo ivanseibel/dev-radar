@@ -18,6 +18,6 @@ Users can access directly Github user profile.
 - Implement search by name, Github user name and technologies.
 
 ## Some screen captures
-![Web front-end big size](../public/img/web-front-end-bigsize.png | width=200)
+![Web front-end big size](../public/img/web-front-end-bigsize.png)
 
-![Web front-end small size](../public/img/web-front-end-smallsize.png | width=100)
+![Web front-end small size](../public/img/web-front-end-smallsize.png)
