@@ -12,3 +12,4 @@ Touching on the dev info ballon, user will be redirected to a screen with Github
 
 ## Future Improvements
 - Implement a setup screen where user is going to set the max distance to search devs.
+- Dispense keyboard when user touch on map
