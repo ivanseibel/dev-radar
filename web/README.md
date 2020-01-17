@@ -1,5 +1,5 @@
 # Dev Radar: Web Front-End
-A responsive Web front-end builded with ReactJS and Express.
+A responsive Web front-end builded with ReactJS.
 
 ## Register new dev
 User can register new devs by filling the Register form. Some infos will be provided by Gituser user profile (name, bio and avatar).
