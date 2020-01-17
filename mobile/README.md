@@ -2,7 +2,7 @@
 Mobile front-end for Android and iOS devices, builded with React Native and Expo.
 
 ## Search nearest devs
-Near devs satisfying the technlogies searched will be plotted on the map. In this version back-end is configured to search devs until 10km limit. Future versions will offer the possibility to configure this option on front-end.
+Near devs satisfying the technlogies searched will be plotted on the map. In this version back-end is configured to search devs until 10km limit. 
 
 ## Display dev info on map
 User can touch on the avatar and a baloon will be showed to display developer infos. 
