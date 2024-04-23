@@ -33,8 +33,8 @@ dependencies:
     specifier: 0.26.1
     version: 0.26.1(prop-types@15.8.1)(react-native@0.61.4)(react@16.9.0)
   react-native-reanimated:
-    specifier: ~1.4.0
-    version: 1.4.0
+    specifier: ~2.10.0
+    version: 2.10.0(@babel/core@7.24.4)(react-native@0.61.4)(react@16.9.0)
   react-native-safe-area-context:
     specifier: 0.6.0
     version: 0.6.0(react-native@0.61.4)
@@ -1313,6 +1313,20 @@ packages:
       '@babel/helper-plugin-utils': 7.24.0
       '@babel/types': 7.24.0
       esutils: 2.0.3
+
+  /@babel/preset-typescript@7.24.1(@babel/core@7.24.4):
+    resolution: {integrity: sha512-1DBaMmRDpuYQBPWD8Pf/WEwCrtgRHxsZnP4mIy9G/X+hFfbI47Q2G4t1Paakld84+qsk2fSsUPMKg71jkoOOaQ==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.24.4
+      '@babel/helper-plugin-utils': 7.24.0
+      '@babel/helper-validator-option': 7.23.5
+      '@babel/plugin-syntax-jsx': 7.24.1(@babel/core@7.24.4)
+      '@babel/plugin-transform-modules-commonjs': 7.24.1(@babel/core@7.24.4)
+      '@babel/plugin-transform-typescript': 7.24.4(@babel/core@7.24.4)
+    dev: false
 
   /@babel/register@7.23.7(@babel/core@7.24.4):
     resolution: {integrity: sha512-EjJeB6+kvpk+Y5DAkEAmbOBEFkh9OASx0huoEkqYTFxAZHzOAX2Oh5uwAUuL2rUddqfM0SA+KPXV2TbzoZ2kvQ==}
@@ -3916,6 +3930,10 @@ packages:
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
 
+  /lodash.isequal@4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    dev: false
+
   /lodash.throttle@4.1.1:
     resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
     dev: false
@@ -4926,7 +4944,7 @@ packages:
     resolution: {integrity: sha512-z2jLUkRiRc0PBAC9UcXYkqy3VUzBG0cYQAGMsDHsd90JgrzudHAFRJV9fvFm18wNauFTNnJievjZ0C3rI2ydhw==}
     dependencies:
       '@egjs/hammerjs': 2.0.17
-      hammerjs: github.com/naver/hammer.js/54bc698b25edd6e1b76ca975ebaced5ce0467d51
+      hammerjs: git/github.com+naver/hammer.js/54bc698b25edd6e1b76ca975ebaced5ce0467d51
       hoist-non-react-statics: 2.5.5
       invariant: 2.2.4
       prop-types: 15.8.1
@@ -4952,8 +4970,23 @@ packages:
       react-native: '@github.com/expo/react-native/archive/sdk-36.0.0.tar.gz(@babel/core@7.24.4)(react@16.9.0)'
     dev: false
 
-  /react-native-reanimated@1.4.0:
-    resolution: {integrity: sha512-tO7nSNNP+iRLVbkcSS5GXyDBb7tSI02+XuRL3/S39EAr35rnvUy2JfeLUQG+fWSObJjnMVhasUDEUwlENk8IXw==}
+  /react-native-reanimated@2.10.0(@babel/core@7.24.4)(react-native@0.61.4)(react@16.9.0):
+    resolution: {integrity: sha512-jKm3xz5nX7ABtHzzuuLmawP0pFWP77lXNdIC6AWOceBs23OHUaJ29p4prxr/7Sb588GwTbkPsYkDqVFaE3ezNQ==}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+      react: '*'
+      react-native: '*'
+    dependencies:
+      '@babel/core': 7.24.4
+      '@babel/plugin-transform-object-assign': 7.24.1(@babel/core@7.24.4)
+      '@babel/preset-typescript': 7.24.1(@babel/core@7.24.4)
+      '@types/invariant': 2.2.37
+      invariant: 2.2.4
+      lodash.isequal: 4.5.0
+      react: 16.9.0
+      react-native: '@github.com/expo/react-native/archive/sdk-36.0.0.tar.gz(@babel/core@7.24.4)(react@16.9.0)'
+      setimmediate: 1.0.5
+      string-hash-64: 1.0.3
     dev: false
 
   /react-native-safe-area-context@0.6.0(react-native@0.61.4):
@@ -5643,6 +5676,10 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
+  /string-hash-64@1.0.3:
+    resolution: {integrity: sha512-D5OKWKvDhyVWWn2x5Y9b+37NUllks34q1dCDhk/vYcso9fmhs+Tl3KR/gE4v5UNj2UA35cnX4KdVVGkG1deKqw==}
+    dev: false
+
   /string-width@1.0.2:
     resolution: {integrity: sha512-0XsVpQLnVCXHJfyEs8tC0zpTVIr5PKKsQtkT29IwupnPTjtPmQ3xT/4yCREF9hYkV/3M3kzcUTSAZT6a6h81tw==}
     engines: {node: '>=0.10.0'}
@@ -6249,8 +6286,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  github.com/naver/hammer.js/54bc698b25edd6e1b76ca975ebaced5ce0467d51:
-    resolution: {tarball: https://codeload.github.com/naver/hammer.js/tar.gz/54bc698b25edd6e1b76ca975ebaced5ce0467d51}
+  git/github.com+naver/hammer.js/54bc698b25edd6e1b76ca975ebaced5ce0467d51:
+    resolution: {commit: 54bc698b25edd6e1b76ca975ebaced5ce0467d51, repo: git@github.com:naver/hammer.js.git, type: git}
     name: '@egjs/hammerjs'
     version: 2.0.17-snapshot
     engines: {node: '>=0.8.0'}
